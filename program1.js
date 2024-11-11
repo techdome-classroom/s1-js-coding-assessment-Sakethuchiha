@@ -13,7 +13,7 @@ const getTotalIsles = function (grid) {
           return;
       }
 
-      // Mark the current cell as water to avoid re-visiting
+      
       grid[i][j] = 'W';
 
       // Explore all four directions: up, down, left, and right
