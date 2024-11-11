@@ -28,7 +28,7 @@ const getTotalIsles = function (grid) {
           
           if (grid[i][j] === 'L') {
               islandCount++;
-              dfs(i, j); // Explore the entire island
+              dfs(i, j);
           }
       }
   }
