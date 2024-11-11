@@ -20,7 +20,7 @@ const decodeTheRing = function (s, p) {
               // '*' can match any sequence, including an empty one
               dp[i][j] = dp[i][j - 1] || dp[i - 1][j];
           } else if (p[j - 1] === '?' || s[i - 1] === p[j - 1]) {
-              // '?' matches any single character, or characters match exactly
+             
               dp[i][j] = dp[i - 1][j - 1];
           }
       }
