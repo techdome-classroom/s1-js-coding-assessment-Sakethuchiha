@@ -2,7 +2,7 @@ const decodeTheRing = function (s, p) {
   const m = s.length;
   const n = p.length;
 
-  // Initialize DP table
+
   const dp = Array(m + 1).fill(false).map(() => Array(n + 1).fill(false));
   dp[0][0] = true; 
 
