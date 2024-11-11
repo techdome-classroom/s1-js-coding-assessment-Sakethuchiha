@@ -8,7 +8,7 @@ const getTotalIsles = function (grid) {
 
   // Helper function to mark the island cells as visited
   const dfs = (i, j) => {
-      // Check if the current cell is out of bounds or not land
+    
       if (i < 0 || i >= rows || j < 0 || j >= cols || grid[i][j] === 'W') {
           return;
       }
