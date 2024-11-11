@@ -25,7 +25,7 @@ const getTotalIsles = function (grid) {
  
   for (let i = 0; i < rows; i++) {
       for (let j = 0; j < cols; j++) {
-          // If the cell is land, it represents a new island
+          
           if (grid[i][j] === 'L') {
               islandCount++;
               dfs(i, j); // Explore the entire island
