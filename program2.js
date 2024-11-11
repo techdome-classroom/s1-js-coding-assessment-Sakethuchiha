@@ -4,9 +4,8 @@ const decodeTheRing = function (s, p) {
 
   // Initialize DP table
   const dp = Array(m + 1).fill(false).map(() => Array(n + 1).fill(false));
-  dp[0][0] = true; // empty pattern matches empty string
+  dp[0][0] = true; 
 
-  // Handle patterns that start with '*', allowing it to match an empty sequence
   for (let j = 1; j <= n; j++) {
       if (p[j - 1] === '*') {
           dp[0][j] = dp[0][j - 1];
