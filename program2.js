@@ -26,7 +26,7 @@ const decodeTheRing = function (s, p) {
       }
   }
 
-  // The result is whether the entire pattern matches the entire message
+  
   return dp[m][n];
 };
 
